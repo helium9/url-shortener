@@ -1,6 +1,6 @@
 import requests
 import json
-print("Welcome to URL Shortener")
+print("Welcome to URL Shortener.\n")
 try:
     r = requests.get('http://ak10.pythonanywhere.com/-json') #resolve issue of key conflict
     maps = json.loads(r.text)
@@ -32,13 +32,28 @@ try:
 
     if(short_url_addon is not None):
         payload = json.dumps(short_url_addon)
-        headers = {"Content-Type": "application/json"}
+        headers = {"Content-Type": "application/json"} #for MIME type
         r = requests.post("http://ak10.pythonanywhere.com/-update", data=payload, headers=headers)
-        print(r.text)
-        #print(payload)
+        #print(r.text)
+        length_shortened=len(long_url)-len(r.text)
+        #print(length_shortened)
+        if length_shortened>0:
+            print("\nYour URL has been shortened by "+str(length_shortened)+" characters!")
+            print("Here's your shortened URL, "+r.text)
+        else:
+            print("\nYour URL was already too small and couldn't be shortened more.")
+            print("Here's your shortened URL, "+r.text)
+
     else:
         #print('{\''+list(maps.keys())[list(maps.values()).index(long_url)][7:]+'\': \''+long_url+'\'}')
-        print("Your shortened URL is: "+list(maps.keys())[list(maps.values()).index(long_url)][7:])
+        short_url = list(maps.keys())[list(maps.values()).index(long_url)][7:]
+        length_shortened=len(long_url)-len(short_url)
+        if length_shortened>0:
+            print("\nYour URL has been shortened by "+str(length_shortened)+" characters!")
+            print("Here's your shortened URL, "+short_url)
+        else:
+            print("\nYour URL was already too small and couldn't be shortened more.")
+            print("Here's your shortened URL, "+short_url)
 
 except:
     print("Connection failed.")
