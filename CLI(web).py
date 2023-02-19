@@ -60,3 +60,4 @@ try:
     ask = input("\nPress enter to exit.")
 except:
     print("Connection failed.")
+    ask = input("\nPress enter to exit.")
