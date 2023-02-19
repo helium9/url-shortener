@@ -14,5 +14,5 @@ All keys are represented in 62 base number system to be able to store more infor
 ##Files
 The files provided are exactly as they were in the working directory.
 <br>Python files, `CLI.py` and `server.py` were used earlier to host the system locally. Their final version (hosted on https://www.pythonanywhere.com/) are designated with a `(web)` suffix.
-<br>The `Files/` directory contains `maps.json` which is used to store redirection relations.
+<br>The `Files/` directory contains `maps.json` which is used to store redirection relations. It is only representative.
 
