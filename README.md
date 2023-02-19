@@ -1,6 +1,6 @@
 # url-shortener
 A python CLI project for Programming Club Induction participation 2023.
-## Installation
+## Usage
 Run the executable `CLI(web).exe`. <br>NOTE: An active internet connection is required for the program to work.
 <br><br>
 ## Working idea of the program
