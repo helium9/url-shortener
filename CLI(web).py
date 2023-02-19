@@ -1,5 +1,7 @@
 import requests
 import json
+import pyperclip
+
 print("Welcome to URL Shortener.\n")
 try:
     r = requests.get('http://ak10.pythonanywhere.com/-json') #resolve issue of key conflict
@@ -57,7 +59,8 @@ try:
             print("\nYour URL was already too small and couldn't be shortened more.")
             print("Here's your shortened URL, "+short_url)
 
-    ask = input("\nPress enter to exit.")
+    ask = input("\nPress enter to exit and copy link to your clipboard.")
+    pyperclip.copy(short_url)
 except:
     print("Connection failed.")
     ask = input("\nPress enter to exit.")
