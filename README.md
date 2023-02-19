@@ -11,6 +11,7 @@ When the user enters a link to be shortened, at first the json file is checked f
 A new shortened link and long link relation is created using an algorithm which simply supplies a number as a key for the key-value pair.
 The number (key) is added by one everytime a new url relation is added.
 All keys are represented in 62 base number system to be able to store more information in less characters. It uses all the lower/upper alphabets and numbers.
+<br>
 ##Files
 The files provided are exactly as they were in the working directory.
 <br>Python files, `CLI.py` and `server.py` were used earlier to host the system locally. Their final version (hosted on https://www.pythonanywhere.com/) are designated with a `(web)` suffix.
