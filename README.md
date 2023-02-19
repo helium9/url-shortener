@@ -11,7 +11,7 @@ When the user enters a link to be shortened, at first the json file is checked f
 A new shortened link and long link relation is created using an algorithm which simply supplies a number as a key for the key-value pair.
 The number (key) is added by one everytime a new url relation is added.
 All keys are represented in 62 base number system to be able to store more information in less characters. It uses all the lower/upper alphabets and numbers.
-<br>So, a valid shortened link may be `C/5` where `5` is the key. Sometimes, the provided link may not be that short and that is due to the limitaion of the domain name. The URL, `ak10.pythonanywhere.com/<key>` is itself pretty big and that is due to the hosting website. A custom domain which is better and shorter would have resolved the issue.
+<br>So, a valid shortened link may be `C/5` where `5` is the key. Sometimes, the provided link may not be that short and that is due to the limitaion of the domain name. The URL, `ak10.pythonanywhere.com/` is itself pretty big and that is due to the hosting website. A custom domain which is shorter would have resolved the issue.
 <br>
 ## Files
 The files provided are exactly as they were in the working directory.
