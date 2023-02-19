@@ -18,8 +18,9 @@ All keys are represented in 62 base number system to be able to store more infor
 <br>
 ## Files
 The files provided are exactly as they were in the development working directory.
-<br>Python files, `CLI.py` and `server.py` were used earlier to host the system locally. Their final version (hosted on https://www.pythonanywhere.com/) are designated with a `(web)` suffix.
-<br>The `Files/` directory contains `maps.json` which is used to store redirection relations. It is only representative.
+<br>Python files, `CLI.py` and `server.py` were used earlier to host the system locally. 
+<br> **NOTE:** Their final version (hosted on https://www.pythonanywhere.com/) are designated with a `(web)` suffix, i.e. the actual file used for making `CLI(web).exe` is `CLI(web).py` and the server file is `server(web).py`, but on the server this is still named `server.py`.
+<br>Here, the `Files/` directory contains `maps.json` which is used to store redirection relations. It is only representative.
 <br>
 ## Screenshots
 <img src="https://user-images.githubusercontent.com/26248161/219958899-0be3a3b9-7fc3-4fda-bc53-2fbb5aca0ffa.png" width=70% height=70%>
