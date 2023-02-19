@@ -1,8 +1,9 @@
 # url-shortener
 A python CLI project for Programming Club Induction participation 2023.
 ## Usage
-Run the executable `CLI(web).exe`. <br>NOTE: An active internet connection is required for the program to work.
+Download and run the executable `CLI(web).exe`. <br>NOTE: An active internet connection is required for the program to work. 
 An error `Connection Failed.` will be shown otherwise.
+<br>The file is provided in the root directory.
 <br><br>
 ## Working idea of the program
 An app which shortens a given URL.
@@ -17,10 +18,11 @@ All keys are represented in 62 base number system to be able to store more infor
 <br>
 ## Files
 The files provided are exactly as they were in the development working directory.
-<br>Python files, `CLI.py` and `server.py` were used earlier to host the system locally. Their final version (hosted on https://www.pythonanywhere.com/) are designated with a `(web)` suffix.
-<br>The `Files/` directory contains `maps.json` which is used to store redirection relations. It is only representative.
+<br>Python files, `CLI.py` and `server.py` were used earlier to host the system locally. 
+<br> **NOTE:** Their final version (hosted on https://www.pythonanywhere.com/) are designated with a `(web)` suffix, i.e. the actual file used for making `CLI(web).exe` is `CLI(web).py` and the server file is `server(web).py`, but on the server this is still named `server.py`.
+<br>Here, the `Files/` directory contains `maps.json` which is used to store redirection relations. It is only representative.
 <br>
 ## Screenshots
-![Screenshot 2023-02-19 211632](https://user-images.githubusercontent.com/26248161/219958899-0be3a3b9-7fc3-4fda-bc53-2fbb5aca0ffa.png)
-![Screenshot 2023-02-19 211727](https://user-images.githubusercontent.com/26248161/219958924-8bf4887c-b267-481f-8f91-9d8b5cecdafb.png)
+<img src="https://user-images.githubusercontent.com/26248161/219958899-0be3a3b9-7fc3-4fda-bc53-2fbb5aca0ffa.png" width=70% height=70%>
+<img src="https://user-images.githubusercontent.com/26248161/219958924-8bf4887c-b267-481f-8f91-9d8b5cecdafb.png" width=70% height=70%>
 
