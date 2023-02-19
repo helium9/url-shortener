@@ -3,12 +3,14 @@ import json
 print("Welcome to URL Shortener.\n")
 try:
     r = requests.get('http://ak10.pythonanywhere.com/-json') #resolve issue of key conflict
+    #using '-' ensures that a key-value pair containing '-json' as key is never generated, since '-' is not in symbols.
     maps = json.loads(r.text)
     long_url = input("Enter URL to shorten: ")
 
     #print(maps)
 
-    def shorten(long_url, max_index):
+    def shorten(long_url, max_index): #this essentially makes a key represented by len(symbols) base number system.
+        #It is done like that because a higher base would be able to store more information in same number of characters than base 10.
         if long_url not in maps.values():
             symbols = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             base = len(symbols)
@@ -46,7 +48,7 @@ try:
 
     else:
         #print('{\''+list(maps.keys())[list(maps.values()).index(long_url)][7:]+'\': \''+long_url+'\'}')
-        short_url = list(maps.keys())[list(maps.values()).index(long_url)][7:]
+        short_url = list(maps.keys())[list(maps.values()).index(long_url)][7:] #returns the key from given value as long_url.
         length_shortened=len(long_url)-len(short_url)
         if length_shortened>0:
             print("\nYour URL has been shortened by "+str(length_shortened)+" characters!")
@@ -55,5 +57,6 @@ try:
             print("\nYour URL was already too small and couldn't be shortened more.")
             print("Here's your shortened URL, "+short_url)
 
+    ask = input("\nPress enter to exit.")
 except:
     print("Connection failed.")
