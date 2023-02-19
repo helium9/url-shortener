@@ -9,7 +9,7 @@ An error `Connection Failed.` will be shown otherwise.
 An app which shortens a given URL.
 The CLI app works in a similar manner as any URL shortening services out there (like- https://bitly.com, https://cutt.ly, etc.). 
 A redirection request is processed when the user enters a shortened link.
-The shortened link and original link relations are stored in a json file located in the server (used flask).
+The shortened link and original link relations are stored in a json file located in the server. The backend server is created using Flask.
 When the user enters a link to be shortened, at first the json file is checked for any pre-existing relations, if not then the program creates one and updates the json file.
 A new shortened link and long link relation is created using an algorithm which simply supplies a number as a key for the key-value pair.
 The number (key) is added by one everytime a new url relation is added.
