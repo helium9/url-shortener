@@ -21,6 +21,6 @@ The files provided are exactly as they were in the development working directory
 <br>The `Files/` directory contains `maps.json` which is used to store redirection relations. It is only representative.
 <br>
 ## Screenshots
-<img src="https://user-images.githubusercontent.com/26248161/219958899-0be3a3b9-7fc3-4fda-bc53-2fbb5aca0ffa.png" width=50% height=50%>
-<img src="https://user-images.githubusercontent.com/26248161/219958924-8bf4887c-b267-481f-8f91-9d8b5cecdafb.png" width=50% height=50%>
+<img src="https://user-images.githubusercontent.com/26248161/219958899-0be3a3b9-7fc3-4fda-bc53-2fbb5aca0ffa.png" width=70% height=70%>
+<img src="https://user-images.githubusercontent.com/26248161/219958924-8bf4887c-b267-481f-8f91-9d8b5cecdafb.png" width=70% height=70%>
 
