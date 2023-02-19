@@ -47,6 +47,8 @@ try:
         else:
             print("\nYour URL was already too small and couldn't be shortened more.")
             print("Here's your shortened URL, "+r.text)
+        ask = input("\nPress enter to exit and copy link to your clipboard.")
+        pyperclip.copy(r.text)
 
     else:
         #print('{\''+list(maps.keys())[list(maps.values()).index(long_url)][7:]+'\': \''+long_url+'\'}')
@@ -59,8 +61,8 @@ try:
             print("\nYour URL was already too small and couldn't be shortened more.")
             print("Here's your shortened URL, "+short_url)
 
-    ask = input("\nPress enter to exit and copy link to your clipboard.")
-    pyperclip.copy(short_url)
+        ask = input("\nPress enter to exit and copy link to your clipboard.")
+        pyperclip.copy(short_url)
 except:
     print("Connection failed.")
     ask = input("\nPress enter to exit.")
