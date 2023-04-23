@@ -1,3 +1,5 @@
+### Future
+I plan to integrate the backend into a website which users can directly use to shorten URLs. Thus, the CLI will no longer be required. The website will be responsive and will generate a shareable QR code compatible with popular social media apps. The use of QR codes will make the usage more practical as users don't derive semantic information from QR codes but they do that from normal URLs. The shorter is the URL, the better will be the QR code due to low information density. Also, much later I can make a PWA out of it as well.<br>
 # url-shortener
 A python CLI project for Programming Club Induction participation 2023.
 ## Usage
